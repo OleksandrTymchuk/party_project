@@ -8,3 +8,4 @@ class User(db.Model):
     email = db.Column(db.String(350), nullable=False, unique=True)
     name = db.Column(db.String(100), nullable=False)
     password = db.Column(db.String(100), nullable=False)
+    telegram_token = db.Column(db.String, nullable=True, unique=True)
